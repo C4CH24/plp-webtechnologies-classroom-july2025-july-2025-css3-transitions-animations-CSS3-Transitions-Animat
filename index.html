@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JS Animation Showcase</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>CSS & JavaScript Animation Showcase</h1>
+        <p>Demonstrating transitions, animations, and interactive effects</p>
+    </header>
+    
+    <div class="container">
+        <!-- Part 1: CSS Animations -->
+        <section class="card">
+            <h2>Part 1: CSS Animations</h2>
+            
+            <h3>Button Hover Effect</h3>
+            <button class="btn-hover">Hover Me</button>
+            
+            <h3>Pulsing Animation</h3>
+            <div class="animated-box"></div>
+            
+            <h3>Sliding Animation</h3>
+            <div class="slide-container">
+                <div class="slider"></div>
+            </div>
+        </section>
+        
+        <!-- Part 2: JavaScript Functions -->
+        <section class="card">
+            <h2>Part 2: JavaScript Functions</h2>
+            
+            <h3>Scope Demonstration</h3>
+            <p>Global and local variable examples with color changes</p>
+            
+            <div class="demo-box" id="jsDemoBox"></div>
+            
+            <div class="js-controls">
+                <button onclick="changeColor('linear-gradient(45deg, #1a2a6c, #b21f1f)')">Reset Color</button>
+                <button onclick="changeColor('linear-gradient(45deg, #00b09b, #96c93d)')">Change to Green</button>
+                <button onclick="changeColor('linear-gradient(45deg, #fdbb2d, #b21f1f)')">Change to Orange</button>
+                <button onclick="toggleVisibility()">Toggle Visibility</button>
+            </div>
+            
+            <h3>Function with Parameters</h3>
+            <p>Check console for output of calculateArea() function</p>
+        </section>
+        
+        <!-- Part 3: Combined CSS & JavaScript -->
+        <section class="card">
+            <h2>Part 3: Combined CSS & JavaScript</h2>
+            
+            <h3>Card Flip Animation</h3>
+            <div class="card-flip" id="cardFlip">
+                <div class="card-inner">
+                    <div class="card-front">Front</div>
+                    <div class="card-back">Back</div>
+                </div>
+            </div>
+            <button class="flip-btn" onclick="flipCard()">Flip Card</button>
+            
+            <h3>Modal Animation</h3>
+            <button class="flip-btn" onclick="openModal()">Open Modal</button>
+            
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <h3>Animated Modal</h3>
+                    <p>This modal slides in with a fade effect, powered by CSS transitions triggered by JavaScript.</p>
+                    <button class="close-btn" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </section>
+    </div>
+ <script defer src="script.js"></script>
+    
+</body>
+</html>
